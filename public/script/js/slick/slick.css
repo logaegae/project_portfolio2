@@ -125,7 +125,7 @@
     left: -50px;
     width: 34px;
     height: 63px;
-    background-image: url(../../../WD_IMAGES/GLOBAL/fleche-nav-about-left.png);
+    background-image: url(../../../../public/image/global/fleche-nav-about-left.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -136,7 +136,7 @@
     right: -50px;
     width: 34px;
     height: 63px;
-    background-image: url(../../../WD_IMAGES/GLOBAL/fleche-nav-about-right.png);
+    background-image: url(../../../../public/image/global/fleche-nav-about-right.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
