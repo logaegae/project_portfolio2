@@ -486,8 +486,8 @@
 
                         <section data-index="slide-1">
                             <article>
-                                <h1>하이미디어 웹사이트 리뉴얼</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_himedia" target="_blank">GitHub</a>
+                                <h1>하이미디어 리뉴얼 웹사이트 개발</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_himedia" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
@@ -521,7 +521,7 @@
 
                         <section data-index="slide-2">
                             <article>
-                                <h1>하이미디어 웹사이트</h1>
+                                <h1>하이미디어 웹사이트 유지보수</h1>
                                 <div class="flickr-and-cie">유지보수
                                 </div>
                                 <p>
@@ -547,8 +547,8 @@
 
                         <section data-index="slide-3">
                             <article>
-                                <h1>아이픽스잇 코리아 웹사이트</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_ifixit.git" target="_blank">GitHub</a>
+                                <h1>아이픽스잇 코리아 웹사이트 개발</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_ifixit.git" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
@@ -573,8 +573,8 @@
 
                         <section data-index="slide-4">
                             <article>
-                                <h1>Wooa 쿠폰 관리 시스템(태블릿)</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_wooa.git" target="_blank">GitHub</a>
+                                <h1>Wooa 쿠폰 관리 시스템(태블릿) 개발</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_wooa.git" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
@@ -600,8 +600,8 @@
 
                         <section data-index="slide-5">
                             <article>
-                                <h1>O Berry Good 웹사이트</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_oberry.git" target="_blank">GitHub</a>
+                                <h1>O Berry Good 웹사이트 개발/퍼블리싱</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_oberry.git" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
@@ -626,8 +626,8 @@
 
                         <section data-index="slide-6">
                             <article>
-                                <h1>Parnas Tower 웹사이트</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_parnas.git" target="_blank">GitHub</a>
+                                <h1>Parnas Tower 웹사이트 퍼블리싱</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_parnas.git" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
@@ -652,8 +652,8 @@
 
                         <section data-index="slide-7">
                             <article>
-                                <h1>국립공원관리공단 3050 웹사이트</h1>
-                                <div class="flickr-and-cie">Repository Link <a href="https://github.com/logaegae/project_parnas.git" target="_blank">GitHub</a>
+                                <h1>국립공원관리공단 3050 웹사이트 퍼블리싱</h1>
+                                <div class="flickr-and-cie">Repository Link : <a href="https://github.com/logaegae/project_parnas.git" target="_blank">GitHub</a>
                                 </div>
                                 <p>
                                     작업내용<br>
