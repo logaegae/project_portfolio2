@@ -42,40 +42,6 @@
     return e
 });
 $(function() {
-    // $.html5Loader({
-    //     filesToLoad: "spip.php?page=inc_preload.json",
-    //     onBeforeLoad: function() {
-    //         $('<div class="stroke"></div><div class="countdown">0 %</div>').appendTo("#preload");
-    //         $("#preload > .stroke").delay(800).queue(function() {
-    //             $(this).addClass("on").dequeue()
-    //         });
-    //         $("#preload > img").delay(1200).queue(function() {
-    //             $(this).addClass("on").dequeue()
-    //         });
-    //         $("#preload > .countdown").delay(1400).queue(function() {
-    //             $(this).addClass("on").dequeue()
-    //         })
-    //     },
-    //     onUpdate: function(b) {
-    //         setTimeout(function() {
-    //             $("#preload > .countdown").html(b +
-    //                 " %");
-    //             100 == b && ($endTransition = "webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", setTimeout(function() {
-    //                 $(window).scrollTop(0)
-    //             }, 200), $("#preload > img").removeClass("on").on($endTransition, function() {
-    //                 $("#preload > .countdown").removeClass("on");
-    //                 $("#preload > .stroke").addClass("on2").on($endTransition, function() {
-    //                     $(this).addClass("on3");
-    //                     $(".upper, .lower").addClass("on").on($endTransition, function() {
-    //                         $(".logo a img").attr("src", "/public/image/global/animation-logo-lempens-design.gif").addClass("on");
-    //                         $("#preload").remove();
-    //                         setAnimLogo()
-    //                     })
-    //                 })
-    //             }))
-    //         }, 2E3)
-    //     }
-    // });
     $nav = $(".navButton");
     $subnav = $(".subnav");
     $main = $("#main");
@@ -85,8 +51,8 @@ $(function() {
     $controller = new ScrollMagic;
     $mouseEventOut = $mouseEventHover = $mouseEventClick = null;
     categorizr.isDesktop && ($main.addClass("on"), $("body").addClass("desktop"), $mouseEventClick = "click", $mouseEventHover = "mouseenter", $mouseEventOut = "mouseleave");
-    categorizr.isTablet && ($("body").addClass("tablet"), $mouseEventHover = $mouseEventClick = "tap", $('<script src="/public/script/js/iscroll/iscroll.js" type="text/javascript">\x3c/script>').appendTo($("head")),
-        $('<script src="/public/script/js/iscroll/iscroll-probe.js" type="text/javascript">\x3c/script>').appendTo($("head")), $main.wrapInner('<div id="slider"></div>'), $controller = new ScrollMagic({
+    categorizr.isTablet && ($("body").addClass("tablet"), $mouseEventHover = $mouseEventClick = "tap", $('<script src="./public/script/js/iscroll/iscroll.js" type="text/javascript">\x3c/script>').appendTo($("head")),
+        $('<script src="./public/script/js/iscroll/iscroll-probe.js" type="text/javascript">\x3c/script>').appendTo($("head")), $main.wrapInner('<div id="slider"></div>'), $controller = new ScrollMagic({
             container: "#main"
         }), $myScroll = new IScroll("#main", {
             scrollX: !1,
@@ -106,7 +72,7 @@ $(function() {
     setScrollIcon();
     smoothScroll();
     detectDevicesandScreens();
-    int_interests_icons();
+    // int_interests_icons();
     adapt_mainPic_height();
     rotateH1();
     (new ScrollScene({
@@ -167,14 +133,7 @@ $(function() {
             },
             ease: Linear.easeNone
         }));
-    (new ScrollScene({
-        triggerElement: $(".apropos-2"),
-        triggerHook: .9,
-        duration: 350
-    })).addTo($controller).setTween(TweenMax.to($(".apropos-2"), 1, {
-        backgroundColor: "#714463",
-        ease: Linear.easeNone
-    }));
+
     (new ScrollScene({
         triggerElement: "#portfolio .mainPicture",
         triggerHook: 0,
@@ -210,34 +169,10 @@ $(function() {
     })).on("end", function(b) {
         "REVERSE" == b.scrollDirection && $("#portfolio-details,#portfolio .prow, #top-left-fixed-block,.portfolio-tab,.portfolio-nav").removeClass("on")
     }).addTo($controller);
-    // (new ScrollScene({
-    //     triggerElement: "#awards",
-    //     triggerHook: .85,
-    //     duration: $(window).height() + 400
-    // })).setTween(TweenMax.to($(".raylight"), 3, {
-    //     rotation: 180,
-    //     ease: Linear.easeNone
-    // })).addTo($controller);
-    // (new ScrollScene({
-    //     triggerElement: "#awards",
-    //     triggerHook: .7,
-    //     duration: $(window).height() - 150
-    // })).on("start", function(b) {
-    //     "FORWARD" == b.scrollDirection && countAwards()
-    // }).on("end", function(b) {
-    //     "REVERSE" == b.scrollDirection && countAwards()
-    // }).addTo($controller);
-    // (new ScrollScene({
-    //     triggerElement: "#awards",
-    //     triggerHook: .3,
-    //     duration: $(window).height() /
-    //         2
-    // })).on("start", function(b) {
-    //     $("#portfolio-details").hasClass("on") && $("#portfolio-details,#portfolio .prow, #top-left-fixed-block,.portfolio-tab,.portfolio-nav").removeClass("on")
-    // }).addTo($controller);
+
     if ($("#portfolio-details").length) {
         var g = function() {
-                $posYportfolio = parseInt($("#portfolio").position().top - 550);
+                $posYportfolio = parseInt($("#portfolio").position().top - 192);
                 $("#portfolio-details").css("top", $posYportfolio)
             },
             c = function() {

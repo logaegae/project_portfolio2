@@ -378,52 +378,52 @@ function anim_slide_skills_softwares() {
     }, 750)
 }
 
-function int_interests_icons() {
-    TweenMax.fromTo($(".heart img"), .45, {
-        scale: 1.4
-    }, {
-        repeatDelay: .5,
-        scale: 1,
-        repeat: -1,
-        ease: Back.easeOut
-    });
-    $("#interests_about_me").find("span").each(function(a) {
-        a *= 145;
-        TweenMax.to($(this), 0, {
-            startAt: {
-                backgroundPosition: "-" + a + "px 0"
-            }
-        });
-        $(this).on("mouseenter", function() {
-            var a = $(this).css("backgroundPosition").split(" ")[0];
-            $(this).parent().append('<div class="fillBg"></div>');
-            TweenMax.to($(this), .6, {
-                backgroundPosition: a + " -145px",
-                ease: Back.easeOut
-            });
-            TweenMax.to($(this).parent().children(".fillBg"),
-                .3, {
-                    height: 145,
-                    ease: Back.easeOut
-                })
-        });
-        $(this).on("mouseleave", function() {
-            var a = $(this).css("backgroundPosition").split(" ")[0];
-            TweenMax.to($(this), .6, {
-                backgroundPosition: a + " 0px",
-                ease: Back.easeIn
-            });
-            TweenMax.to($(this).parent().children(".fillBg"), .3, {
-                height: 0,
-                ease: Back.easeIn,
-                onCompleteParams: [$(this).parent().children(".fillBg")],
-                onComplete: function(a) {
-                    a.remove()
-                }
-            })
-        })
-    })
-}
+// function int_interests_icons() {
+//     TweenMax.fromTo($(".heart img"), .45, {
+//         scale: 1.4
+//     }, {
+//         repeatDelay: .5,
+//         scale: 1,
+//         repeat: -1,
+//         ease: Back.easeOut
+//     });
+//     $("#interests_about_me").find("span").each(function(a) {
+//         a *= 145;
+//         TweenMax.to($(this), 0, {
+//             startAt: {
+//                 backgroundPosition: "-" + a + "px 0"
+//             }
+//         });
+//         $(this).on("mouseenter", function() {
+//             var a = $(this).css("backgroundPosition").split(" ")[0];
+//             $(this).parent().append('<div class="fillBg"></div>');
+//             TweenMax.to($(this), .6, {
+//                 backgroundPosition: a + " -145px",
+//                 ease: Back.easeOut
+//             });
+//             TweenMax.to($(this).parent().children(".fillBg"),
+//                 .3, {
+//                     height: 145,
+//                     ease: Back.easeOut
+//                 })
+//         });
+//         $(this).on("mouseleave", function() {
+//             var a = $(this).css("backgroundPosition").split(" ")[0];
+//             TweenMax.to($(this), .6, {
+//                 backgroundPosition: a + " 0px",
+//                 ease: Back.easeIn
+//             });
+//             TweenMax.to($(this).parent().children(".fillBg"), .3, {
+//                 height: 0,
+//                 ease: Back.easeIn,
+//                 onCompleteParams: [$(this).parent().children(".fillBg")],
+//                 onComplete: function(a) {
+//                     a.remove()
+//                 }
+//             })
+//         })
+//     })
+// }
 $increment = 0;
 
 function countAwards() {
