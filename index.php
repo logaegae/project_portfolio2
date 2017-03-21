@@ -763,6 +763,8 @@
     </div>
 </body>
 
-<!-- Mirrored from lempens-design.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Mar 2017 07:33:02 GMT -->
+<!-- Google Analytics -->
+    <?php include_once("./view/include/analyticstracking.php") ?>
+<!-- End Google Analytics -->
 
 </html>

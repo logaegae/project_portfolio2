@@ -68,7 +68,7 @@ $(function() {
             $controller.update()
         }));
     categorizr.isMobile &&
-        ($("body").addClass("mobile"), $mouseEventHover = $mouseEventClick = "tap", $date = new Date, $("body").html(""), $('<div class="mobileUnderProgress"><h1>Version mobile en construction<br>Mobile version under construction</h1><img src="./public/image/global/animation-logo-lempens-design.gif?' + $date.getTime() + '" alt="S\u00c3\u00a9bastien Lempens Design - http://www.lempens-design.com"></div>').prependTo("body"));
+        ($("body").addClass("mobile"), $mouseEventHover = $mouseEventClick = "tap", $date = new Date, $("body").html(""), $('<div class="mobileUnderProgress"><h1>Mobile version under construction</h1><img src="./public/image/global/animation-logo-lempens-design.gif?' + $date.getTime() + '" alt=""></div>').prependTo("body"));
     setScrollIcon();
     smoothScroll();
     detectDevicesandScreens();
